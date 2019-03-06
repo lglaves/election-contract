@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ethereum Election</title>
+</head>
+<body>
+    <h1 id="election-name">Election Name</h1>
+    <table id="results">
+        <tr id="candidate-name">
+            <td>Candidate 1</td>
+            <td>Canndidate 2</td>
+        </tr>
+        <tr id="vote-count">
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="vote" data-index="0">Vote</button>
+            </td>
+            <td>
+                <button type="button" class="vote" data-index="1">Vote</button>
+            </td>
+        </tr>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="web3.min.js"></script>
+    <script src="truffle-contract.min.js"></script>
+    <script src="App.js"></script>
+</body>
+</html>
