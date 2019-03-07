@@ -53,7 +53,7 @@ module.exports = {
     //  network_id: "*",       // Any network (default: none)
     // },
 
-      rinkeby: {
+    rinkeby: {
       host: "127.0.0.1",     // Localhost (default: none)
       provider: () => new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/" + infuraKey),
       network_id: 4,       // Rinkeby's id
@@ -62,10 +62,16 @@ module.exports = {
     },
 
     development: {
-     host: "127.0.0.1",     // Localhost (default: none)
-     port: 7545,            // Standard Ganache port
-     network_id: "*",       // Any network (default: none)
-    },    
+      host: "127.0.0.1",     // Localhost (default: none)
+      port: 7545,            // Standard Ganache port
+      network_id: "*",       // Any network (default: none)
+    },
+    
+    buddy: {
+      host: "ganache",
+      port: 8545,
+      network_id: "*" // Match any network id      
+    }
 
     // Another network with more advanced options...
     // advanced: {
