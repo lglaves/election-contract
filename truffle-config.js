@@ -23,7 +23,7 @@
  */
 
 require('dotenv').config();
-const HDWallet = require('truffle-hdwallet-provider');
+const HDWalletProvider = require('truffle-hdwallet-provider');
 const infuraKey = process.env["ENDPOINT_KEY"];
 const mnemonic = process.env["NEMONIC"]
 // const fs = require('fs');
@@ -66,11 +66,11 @@ module.exports = {
       port: 7545,            // Standard Ganache port
       network_id: "*",       // Any network (default: none)
     },
-    
+
     buddy: {
       host: "ganache",
       port: 8545,
-      network_id: "*" // Match any network id      
+      network_id: "*" // Match any network id
     }
 
     // Another network with more advanced options...

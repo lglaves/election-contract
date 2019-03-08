@@ -1,5 +1,5 @@
 require('dotenv').config();
-const HDWallet = require('truffle-hdwallet-provider');
+const HDWalletProvider = require('truffle-hdwallet-provider');
 const infuraKey = process.env["ENDPOINT_KEY"];
 const mnemonic = process.env["NEMONIC"]
 
