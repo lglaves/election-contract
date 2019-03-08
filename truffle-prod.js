@@ -15,10 +15,12 @@ module.exports = {
             port: 8545,
             network_id: "*" // Match any network id
         },
-        rinkby: {
+        rinkeby: {
             provider: () => new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/" + infuraKey),
-            network_id: '4',
-        }
+            network_id: 4,       // Rinkeby's id
+            gas : 6700000,
+            gasPrice : 10000000000
+          },
     }
 };
 
